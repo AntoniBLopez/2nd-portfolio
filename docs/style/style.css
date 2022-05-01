@@ -32,7 +32,7 @@ body{
 }
 
 .link a{
-    color: #fff;
+    color: rgb(255, 119, 119);
     opacity: 0.5;
     text-decoration: none;
     text-transform: capitalize;
@@ -45,4 +45,47 @@ body{
 
 .link a:hover, .link.active a{
     opacity: 1;
+}
+
+.home-section{
+    width: 100%;
+    height: 100vh;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    opacity: 0;
+    transition: 1s;
+}
+
+.hero-heading{
+    color: rgb(255, 74, 74);
+    font-size: 120px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.home-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.home-section{
+    /* previous styles */
+    position: fixed;
+}
+
+.home-section.active,
+.project-section.active,
+.about-section.active,
+.contact-section.active{
+    position: relative;
+    opacity: 1;
+    z-index: 8;
 }

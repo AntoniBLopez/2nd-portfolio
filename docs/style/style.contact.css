@@ -17,7 +17,7 @@
     border: 1px solid #fff;
     margin-bottom: 30px;
     border-radius: 5px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     color: #fff;
     padding: 5px 10px;
 }
@@ -35,7 +35,7 @@
 .form-submit-btn{
     background: #ff4f4f;
     color: #fff;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     padding: 15px 40px;
     display: block;
     margin: auto;

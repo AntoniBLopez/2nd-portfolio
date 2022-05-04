@@ -89,3 +89,15 @@
     border-color: #4fdfff;
     color: #4fdfff;
 }
+
+.skill-card:nth-child(6) .skill-level{
+    background: #4fdfff28;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.skill-card:nth-child(7) .skill-level{
+    background: #ff4f4f28;
+    border-color: #ff4f4f;
+    color: #ff4f4f;
+}

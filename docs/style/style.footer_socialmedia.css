@@ -10,6 +10,6 @@
 .rss-icon{
     margin: 0 7px;
 }
-.rss-icon img:hover{
+.rss-icon:hover{
     cursor: pointer;
 }

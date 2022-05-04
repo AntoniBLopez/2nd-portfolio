@@ -1,0 +1,15 @@
+@import "./standard.css";
+
+.footer-socialmedia{
+    display: flex;
+    width: 50px;
+
+    position: relative;
+    margin: 10px 0 50px 31vw;
+}
+.rss-icon{
+    margin: 0 7px;
+}
+.rss-icon img:hover{
+    cursor: pointer;
+}

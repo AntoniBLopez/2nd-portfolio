@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Toni B. Lopez</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/style_about.css">
-    <link rel="stylesheet" href="./style/style_project.css">
-    <link rel="stylesheet" href="./style/style_skills.css">
-    <link rel="stylesheet" href="./style/style_timeline.css">
-    <link rel="stylesheet" href="./style/style_contact.css">
+    <link rel="stylesheet" href="./style/standard.css">
+    <link rel="stylesheet" href="./style/style.home.css">
+    <link rel="stylesheet" href="./style/style.about.css">
+    <link rel="stylesheet" href="./style/style.project.css">
+    <link rel="stylesheet" href="./style/style.skills.css">
+    <link rel="stylesheet" href="./style/style.timeline.css">
+    <link rel="stylesheet" href="./style/style.contact.css">
+    <link rel="stylesheet" href="./style/style.footer_socialmedia.css">
 </head>
 
 <body>
@@ -27,52 +29,42 @@
     <!-- home section -->
     <section class="home-section active">
         <h1 class="hero-heading">hello, i am<br>Toni B. Lopez</h1>
-        <img src="./pictures/profile/IMG_0060.JPG" class="home-img" alt="">
+        <img src="./assets/profile/IMG_0060.JPG" class="home-img" alt="">
     </section>
 
     <!-- project section -->
     <section class="project-section">
-
-        <h1 class="project-heading">some of my projects</h1>
-
         <div class="project-container">
 
             <div class="project-card">
-                <img src="./pictures/profile/IMG_0060.JPG" class="project-img" alt="">
+                <img src="./assets/projects/BingoGame.png" class="project-img" alt="">
                 <div class="project-content">
-                    <h1 class="project-title">project 01</h1>
+                    <h1 class="project-title">Bingo Game</h1>
                     <p class="project-info">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                        HTML, CSS, JavaScript
                     </p>
                     <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                        <button class="project-btn live">see live</button>
+                        <button class="project-btn github"
+                            onclick="location.href='https://github.com/ToniBLopez/bingo-game'">github repo</button>
+                        <button class="project-btn live"
+                            onclick="location.href='https://toniblopez.github.io/bingo-game/'">see live</button>
                     </div>
                 </div>
             </div>
+
             <div class="project-card">
-                <img src="./pictures/profile/IMG_0060.JPG" class="project-img" alt="">
+                <img src="./assets/projects/GeometricFigure.jpg" class="project-img" alt="">
                 <div class="project-content">
-                    <h1 class="project-title">project 01</h1>
+                    <h1 class="project-title">Geometric Figure</h1>
                     <p class="project-info">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                        HTML, CSS & JavaScript
                     </p>
                     <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                        <button class="project-btn live">see live</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="./pictures/profile/IMG_0060.JPG" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">project 01</h1>
-                    <p class="project-info">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
-                    </p>
-                    <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                        <button class="project-btn live">see live</button>
+                        <button class="project-btn github"
+                            onclick="location.href='https://github.com/ToniBLopez/Geometric-Figure'">github
+                            repo</button>
+                        <button class="project-btn live"
+                            onclick="location.href='https://toniblopez.github.io/Geometric-Figure/'">see live</button>
                     </div>
                 </div>
             </div>
@@ -80,51 +72,71 @@
         </div>
     </section>
 
+
     <!-- about section -->
     <section class="about-section">
 
         <!-- skills -->
         <div class="skill-section">
 
+            <!-- Download CV -->
+            <div class="about">
+                <div class="about-img-container">
+                    <!-- <a class="download-cv-btn" href="./toni.txt"  title="Download CV" download="CV Toni B. Lopez">downlaod cv</a> -->
+                    <a class="download-cv-btn" href="./assets/cv/ToniB.LopezCVactu.general.pdf"  title="Download CV" download="CV Toni B. Lopez">downlaod cv</a>
+                </div>
+                <p class="about-info">Siempre estoy aprendiendo y enfocado en mi crecimiento tanto personal como profesional.
+                    Actualmente estoy reinventándome aprendiendo sobre el desarrollo de software y en busqueda activa de empleo,
+                    puesto que ya dispongo de los conocimientos base suficientes como para adentrarme al mundo laboral, puedes ver más
+                    sobre ello en el apartado Projects.
+                </p>
+            </div>
+
             <h1 class="heading">skills</h1>
 
             <div class="skills-container">
 
                 <div class="skill-card">
-                    <img src="./pictures/profile/IMG_0060.JPG" class="skill-img" alt="">
-                    <div class="skill-level">98%</div>
+                    <img src="./assets/skills/html-5.png" class="skill-img" alt="">
+                    <div class="skill-level">90%</div>
                     <h1 class="skill-name">HTML</h1>
-                    <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+                    <p class="skill-info">Syntax, Semantic Elements, Structuring</p>
                 </div>
                 <div class="skill-card">
-                    <img src="./pictures/profile/IMG_0060.JPG" class="skill-img" alt="">
-                    <div class="skill-level">98%</div>
-                    <h1 class="skill-name">HTML</h1>
-                    <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+                    <img src="./assets/skills/css3.png" class="skill-img" alt="">
+                    <div class="skill-level">60%</div>
+                    <h1 class="skill-name">CSS</h1>
+                    <p class="skill-info">Grid, Flexbox, Responsive (Media Querys), BEM methodology, Specificity, Accessibility (with rem)</p>
                 </div>
                 <div class="skill-card">
-                    <img src="./pictures/profile/IMG_0060.JPG" class="skill-img" alt="">
-                    <div class="skill-level">98%</div>
-                    <h1 class="skill-name">HTML</h1>
-                    <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+                    <img src="./assets/skills/javascript.png" class="skill-img" alt="">
+                    <div class="skill-level">80%</div>
+                    <h1 class="skill-name">JavaScript</h1>
+                    <p class="skill-info">Vanilla, OOP (Object Oriented Programming), ES6, Engine V8</p>
                 </div>
                 <div class="skill-card">
-                    <img src="./pictures/profile/IMG_0060.JPG" class="skill-img" alt="">
-                    <div class="skill-level">98%</div>
-                    <h1 class="skill-name">HTML</h1>
-                    <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+                    <img src="./assets/skills/nodejs.svg" class="skill-img" alt="">
+                    <div class="skill-level">70%</div>
+                    <h1 class="skill-name">Node.js</h1>
+                    <p class="skill-info">CRUD, Web Scraping, API REST with Express.js, Automation, JSON</p>
                 </div>
                 <div class="skill-card">
-                    <img src="./pictures/profile/IMG_0060.JPG" class="skill-img" alt="">
-                    <div class="skill-level">98%</div>
-                    <h1 class="skill-name">HTML</h1>
-                    <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+                    <img src="./assets/skills/sql.png" class="skill-img" alt="">
+                    <div class="skill-level">90%</div>
+                    <h1 class="skill-name">SQL</h1>
+                    <p class="skill-info">Language Syntax</p>
                 </div>
                 <div class="skill-card">
-                    <img src="./pictures/profile/IMG_0060.JPG" class="skill-img" alt="">
-                    <div class="skill-level">98%</div>
-                    <h1 class="skill-name">HTML</h1>
-                    <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+                    <img src="./assets/skills/database.png" class="skill-img" alt="">
+                    <div class="skill-level">60%</div>
+                    <h1 class="skill-name">DataBases</h1>
+                    <p class="skill-info">MySQL, PostgreSQL, Docker, Relational Databases (SQL) & No Relational (No SQL), Physical Diagram & Entity-Relationship (Chen Notation), Normalization Process, Query's</p>
+                </div>
+                <div class="skill-card">
+                    <img src="./assets/skills/git.png" class="skill-img" alt="">
+                    <div class="skill-level">90%</div>
+                    <h1 class="skill-name">Git</h1>
+                    <p class="skill-info">Git & GitHub</p>
                 </div>
 
             </div>
@@ -137,55 +149,79 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">2000-2002</h1>
-                    <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+                    <h1 class="card-title">2022-2022</h1>
+                    <p class="card-detail">Estudio de forma Autodidacta en el desarrollo de Software más inclinado hacia la parte Backend.
+                        Empezé un curso de Fundamentos de la Programación en Barcelona Activa con la IT Academy el cuál cursé medio curso,
+                        la otra mitad no la pude acabar porque cambiaron las condiciones de estudio y no pude seguir con ellos. Continué y continuo
+                        mis estudios como programador de software de forma autodidacta con la ayuda de la plataforma Platzi.
+                    </p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">2000-2002</h1>
-                    <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+                    <h1 class="card-title">2021-2021</h1>
+                    <p class="card-detail">Fibra Óptica. Trabajé como técnico de Fibra Óptica FTTH (Fiber To The Home) haciendo instalaciones
+                        de internet en los domicilios de los clientes, dejando listo su correcto funcionamiento.
+                    </p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">2000-2002</h1>
-                    <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+                    <h1 class="card-title">2020-2021</h1>
+                    <p class="card-detail">Emprendedor. Emprendí un negocio en red durante 8 meses en el que estuve
+                        llevando la alimentación de los clientes con los que conectaba a través de mis redes sociales, en especial Instagram.
+                        Actualmente ya no uso la red social Instagram, uso Twitter, Twitch, LinkedIn y GitHub.
+                    </p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">2000-2002</h1>
-                    <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+                    <h1 class="card-title">2016-2020</h1>
+                    <p class="card-detail">Soldador de acero inoxidable durante 5 años. Trabajé soldando y manipulando en todos los procesos
+                        el acero inoxidable y también el hierro (pero en menor medida) en el sector metálico durante 5 años.
+                        Llegando a ascender hasta oficial de 3a.
+                    </p>
                 </div>
             </div>
 
         </div>
 
-        <!-- Download CV -->
-        <div class="about">
-            <div class="about-img-container">
-                <img src="./pictures/profile/IMG_0060.JPG" class="about-img" alt="">
-                <button class="download-cv-btn">downlaod cv</button>
+        <!-- Social Media -->
+        <footer class="footer-socialmedia">
+            <div class="rss-icon">
+                <img src="./assets/rrss/linkedin-48.png" alt="LinkedIn Icon" title="Linkedin" onclick="location.href='https://www.linkedin.com/in/toni-bassols-lopez-91b7b0225/'">
             </div>
-            <p class="about-info">Lorem ipsum.....</p>
-        </div>
+            <div class="rss-icon">
+                <img src="./assets/rrss/github-48.png" alt="GitHub Icon" title="GitHub" onclick="location.href='https://github.com/ToniBLopez/'">
+            </div>
+            <div class="rss-icon">
+                <img src="./assets/rrss/twitter-48.png" alt="Twitter Icon" title="Twitter" onclick="location.href='https://twitter.com/ToniBLopez'">
+            </div>
+            <div class="rss-icon">
+                <img src="./assets/rrss/instagram-48.png" alt="Instagram Icon" title="Instagram" onclick="location.href='https://www.instagram.com/toniiblopez/'">
+            </div>
+        </footer>
 
     </section>
 
-
     <!-- contact section -->
     <section class="contact-section">
+
         <form class="contact-form">
             <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
             <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
             <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
             <button type="submit" class="form-submit-btn">contact</button>
         </form>
+
         <!-- map -->
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11974.389049526455!2d2.1416824355148067!3d41.38283396823144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a27fdee7e2fb%3A0x2600fae14082f072!2sLa%20Nova%20Esquerra%20de%20l&#39;Eixample%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1651430784827!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11973.940721209894!2d2.145177035516096!3d41.385268618227855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2852b467c4f%3A0x763fb413f2ef66aa!2sL&#39;Esquerra%20de%20l&#39;Eixample%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1651513420096!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
     </section>
 
 </body>

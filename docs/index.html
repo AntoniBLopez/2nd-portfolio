@@ -3,227 +3,64 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="This is the professional portfolio of Toni B. Lopez">
+    <meta name="robots" content="index,follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Toni B. Lopez</title>
+
+    <title>Toni B. Lopez - Portfolio</title>
+
     <link rel="stylesheet" href="./style/standard.css">
-    <link rel="stylesheet" href="./style/style.home.css">
-    <link rel="stylesheet" href="./style/style.about.css">
-    <link rel="stylesheet" href="./style/style.project.css">
-    <link rel="stylesheet" href="./style/style.skills.css">
-    <link rel="stylesheet" href="./style/style.timeline.css">
-    <link rel="stylesheet" href="./style/style.contact.css">
-    <link rel="stylesheet" href="./style/style.footer_socialmedia.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;600;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="link-group">
-            <li class="link active"><a href="#">home</a></li>
-            <li class="link"><a href="#">projects</a></li>
-            <li class="link"><a href="#">about</a></li>
-            <li class="link"><a href="#">contact</a></li>
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">
+            <img src="./assets/logo/LogoMakr-red-and-black.png" alt="It is the logo of the page">
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+        <a href="#" class="top-btn">Download CV</a>
+    </header>
 
-    <!-- home section -->
-    <section class="home-section active">
-        <h1 class="hero-heading">hello, i am<br>Toni B. Lopez</h1>
-        <img src="./assets/profile/IMG_0060.JPG" class="home-img" alt="">
-    </section>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h3>Hello, I'm</h3>
+            <h1>Toni B.Lopez</h1>
+            <h5>A web software developer <span>from Barcelona, Spain</span></h5>
+            <p>I'm creative desginer based lorep ipsum dolor tachdown everybare yeah lets go <br>
+            and dedicated to my work.</p>
 
-    <!-- project section -->
-    <section class="project-section">
-        <div class="project-container">
-
-            <div class="project-card">
-                <img src="./assets/projects/BingoGame.png" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">Bingo Game</h1>
-                    <p class="project-info">
-                        HTML, CSS & JavaScript
-                    </p>
-                    <div class="project-btn-grp">
-                        <button class="project-btn github"
-                            onclick="location.href='https://github.com/ToniBLopez/bingo-game'">github repo</button>
-                        <button class="project-btn live"
-                            onclick="location.href='https://toniblopez.github.io/bingo-game/'">see live</button>
-                    </div>
-                </div>
+            <div class="social">
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
             </div>
 
-            <div class="project-card">
-                <img src="./assets/projects/GeometricFigure.jpg" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">Geometric Figure</h1>
-                    <p class="project-info">
-                        HTML, CSS & JavaScript
-                    </p>
-                    <div class="project-btn-grp">
-                        <button class="project-btn github"
-                            onclick="location.href='https://github.com/ToniBLopez/Geometric-Figure'">github
-                            repo</button>
-                        <button class="project-btn live"
-                            onclick="location.href='https://toniblopez.github.io/Geometric-Figure/'">see live</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- about section -->
-    <section class="about-section">
-
-        <!-- skills -->
-        <div class="skill-section">
-
-            <!-- Download CV -->
-            <div class="about">
-                <div class="about-img-container">
-                    <img src="./assets/profile/IMG_me.jpg" class="about-img" alt="">
-                    <a class="download-cv-btn" href="./assets/cv/Toni-B-Lopez-CV_English.pdf" download="CV_Toni_BLopez.pdf">Download CV</a>
-                </div>
-                <p class="about-info">
-                    I like math and algorithms.<br>
-                    I am always learning and focused on my personal and professional growth.<br>
-                    You can see more about my skills, my education, my experience and my social networks by scrolling down.
-                </p>
-            </div>
-
-            <h1 class="heading">skills</h1>
-
-            <div class="skills-container">
-
-                <div class="skill-card">
-                    <img src="./assets/skills/html-5.png" class="skill-img" alt="">
-                    <div class="skill-level">90%</div>
-                    <h1 class="skill-name">HTML</h1>
-                    <p class="skill-info">Syntax<br>Semantic Elements<br>Structuring</p>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/skills/css3.png" class="skill-img" alt="">
-                    <div class="skill-level">60%</div>
-                    <h1 class="skill-name">CSS</h1>
-                    <p class="skill-info">Grid<br>Flexbox<br>Responsive (Media Querys)<br>BEM methodology<br>Specificity<br>Accessibility (with rem)</p>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/skills/javascript.png" class="skill-img" alt="">
-                    <div class="skill-level">80%</div>
-                    <h1 class="skill-name">JavaScript</h1>
-                    <p class="skill-info">Vanilla<br>OOP (Object Oriented Programming)<br>ES6<br>Engine V8</p>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/skills/nodejs.svg" class="skill-img" alt="">
-                    <div class="skill-level">70%</div>
-                    <h1 class="skill-name">Node.js</h1>
-                    <p class="skill-info">CRUD<br>Web Scraping<br>API REST with Express.js<br>Automation<br>JSON</p>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/skills/database.png" class="skill-img" alt="">
-                    <div class="skill-level">60%</div>
-                    <h1 class="skill-name">DataBases</h1>
-                    <p class="skill-info">Docker<br>Relational Databases (SQL) & No Relational (No SQL)<br>Physical Diagram & Entity-Relationship (Chen Notation)<br>Normalization Process<br>Query's</p>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/skills/database-SQL-80.png" class="skill-img" alt="">
-                    <div class="skill-level">90%</div>
-                    <h1 class="skill-name">SQL</h1>
-                    <p class="skill-info">SQL Language Syntax<br>MySQL<br>PostgreSQL</p>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/skills/git.png" class="skill-img" alt="">
-                    <div class="skill-level">90%</div>
-                    <h1 class="skill-name">Git</h1>
-                    <p class="skill-info">Git & GitHub</p>
-                </div>
-
-            </div>
+            <a href="#" class="btn">About Me</a>
         </div>
 
-        <!-- timeline -->
-        <div class="timeline">
-
-            <h1 class="heading">Education And Experience</h1>
-
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">2022-2022</h1>
-                    <p class="card-detail">Self-taught study in Software development more inclined towards the Backend part.
-                        I started a Fundamentals of Programming course at Barcelona Activa with the IT Academy (which I took half a course,
-                        the other half I couldn't finish because the study conditions changed and I couldn't continue with them).
-                        I am currently continuing my studies as a self-taught software programmer with the help of the Platzi platform.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">2021-2021</h1>
-                    <p class="card-detail">Optical fiber. I worked as a FTTH (Fiber To The Home) Fiber Optic technician making internet
-                        installations in the clients' homes, preparing its correct operation.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">2020-2021</h1>
-                    <p class="card-detail">Entrepreneur. I started a network business for 8 months in which I was taking customers by the
-                        hand to improve their diet. I connected with them through my social networks, especially Instagram and WhatsApp.
-                        I currently use Twitter, LinkedIn and GitHub.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">2016-2020</h1>
-                    <p class="card-detail">Stainless steel welder for 5 years. I worked welding and manipulating stainless steel in all
-                        processes and also iron (to a lesser extent) in the metal sector for 5 years. Coming up to officer 3rd.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Social Media -->
-        <footer class="footer-socialmedia">
-            <div class="rss-icon">
-                <img src="./assets/rrss/linkedin-48.png" alt="LinkedIn Icon" title="Linkedin" onclick="location.href='https://www.linkedin.com/in/toniblopez/'">
-            </div>
-            <div class="rss-icon">
-                <img src="./assets/rrss/github-48.png" alt="GitHub Icon" title="GitHub" onclick="location.href='https://github.com/ToniBLopez/'">
-            </div>
-            <div class="rss-icon">
-                <img src="./assets/rrss/twitter-48.png" alt="Twitter Icon" title="Twitter" onclick="location.href='https://twitter.com/ToniBLopez'">
-            </div>
-            <div class="rss-icon">
-                <img src="./assets/rrss/instagram-48.png" alt="Instagram Icon" title="Instagram" onclick="location.href='https://www.instagram.com/toniiblopez/'">
-            </div>
-        </footer>
-
-    </section>
-
-    <!-- contact section -->
-    <section class="contact-section">
-
-        <form class="contact-form" action="https://formsubmit.co/tonideveloper@outlook.es" method="POST">
-            <input type="text" name="name" id="name" placeholder="name" required>
-            <input type="email" name="email" id="email" placeholder="email" required>
-            <textarea name="msg" id="msg" placeholder="message" required></textarea>
-            <button type="submit" class="form-submit-btn">contact</button>
-        </form>
-
-        <!-- map -->
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11973.940721209894!2d2.145177035516096!3d41.385268618227855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2852b467c4f%3A0x763fb413f2ef66aa!2sL&#39;Esquerra%20de%20l&#39;Eixample%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1651513420096!5m2!1ses!2ses"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="home-img">
+            <img src="./assets/profile/transparentImgFondoPintadoPortfolio.png" alt="It's my main photo">
         </div>
 
     </section>
 
 </body>
 <script src="./app/app.js"></script>
-
 </html>

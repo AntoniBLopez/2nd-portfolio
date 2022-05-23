@@ -4,23 +4,30 @@ window.addEventListener ('scroll', function() {
     header.classList.toggle('sticky', window.scrollY > 0)
 })
 
+const menu = document.querySelector('#menu-icon')
+const navlist = document.querySelector('.navlist')
 
-// const links = document.querySelectorAll('.link');
-// const sections = document.querySelectorAll('section');
+menu.onclick = () => {
+    menu.classList.toggle('bx-x')
+    navlist.classList.toggle('active')
+}
 
-// let activeLink = 0;
+window.onscroll = () => {
+    menu.classList.remove('bx-x')
+    navlist.classList.remove('active')
+}
 
-// links.forEach((link, i) => {
-//     link.addEventListener('click', () => {
-//         if(activeLink != i){
-//             links[activeLink].classList.remove('active');
-//             link.classList.add('active');
-//             sections[activeLink].classList.remove('active');
+const sr = ScrollReveal ({
+    distance: '45px',
+    duration: 2700,
+    reset: true
+})
 
-//             setTimeout(() => {
-//                 activeLink = i;
-//                 sections[i].classList.add('active');
-//             }, 1000);
-//         }
-//     })
-// })
+sr.reveal('.home-text', {delay:350, origin:'left'})
+sr.reveal('.home-img', {delay:350, origin:'right'})
+// sr.reveal('.skills-section.projects-section.contact-section', {delay:200, origin:'bottom'})
+sr.reveal('.heading-skills', {delay:200, origin:'bottom'})
+sr.reveal('.skills-container', {delay:200, origin:'bottom'})
+sr.reveal('.heading-project', {delay:200, origin:'bottom'})
+sr.reveal('.project-content', {delay:200, origin:'bottom'})
+sr.reveal('.contact-section', {delay:200, origin:'bottom'})

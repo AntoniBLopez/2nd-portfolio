@@ -9,11 +9,18 @@
 .heading-skills{
     text-align: center;
     align-self: center;
+}
+.heading-skills h3 {
     /* font-size: 2.5rem; */
-    /* color: var(--text-color); */
     font-size: 20px;
     color: var(--main-color);
     font-weight: var(--font-weight);
+}
+.heading-skills h2 {
+    font-size: var(--h2-font);
+    font-weight: var(--font-weight);
+    margin: 7px 0px 10px;
+    line-height: 1.1;
 }
 
 .skills-container{
@@ -113,4 +120,10 @@
     background: #ff4f4f28;
     border-color: #ff4f4f;
     color: var(--text-color);
+}
+
+@media (max-width: 1425px) {
+    .skills-section {
+        padding: 0 3%;
+    }
 }

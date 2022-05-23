@@ -22,3 +22,25 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
 }
+section {
+    padding: 100px 18%;
+}
+
+@media (max-width: 1425px) {
+    :root {
+    --big-font: 4rem;
+    --h2-font: 2.3rem;
+    --p-font: 1rem;
+    transition: .3s;
+    }
+}
+@media (max-width: 800px) {
+    :root {
+        --big-font: 3.4rem;
+        --h2-font: 2rem;
+    }
+    section {
+    padding: 65% 3%;
+    transition: .3s;
+    }
+}

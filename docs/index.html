@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./style/standard.css">
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/skills.css">
+    <link rel="stylesheet" href="./style/projects.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,19 +31,19 @@
 
         <ul class="navlist">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <a href="#" class="top-btn">Download CV</a>
     </header>
 
     <!-- Home -->
-    <section class="home" id="home">
+    <section class="home-section" id="home">
         <div class="home-text">
             <h3>Hello, I'm</h3>
             <h1>Toni B.Lopez</h1>
-            <h5>A web software developer <span>from Barcelona, Spain</span></h5>
+            <h5>A web software developer <span class="span-home">from Barcelona, Spain</span></h5>
             <p>I'm creative desginer based lorep ipsum dolor tachdown everybare yeah lets go <br>
             and dedicated to my work.</p>
 
@@ -52,13 +54,159 @@
                 <a href="#"><i class='bx bxl-github'></i></a>
             </div>
 
-            <a href="#" class="btn">About Me</a>
+            <a href="#projects" class="btn-see_projects">See Projects</a>
         </div>
 
         <div class="home-img">
             <img src="./assets/profile/transparentImgFondoPintadoPortfolio.png" alt="It's my main photo">
         </div>
+    </section>
 
+    <!-- Skills -->
+    <div class="skills-section" id="skills">
+
+        <h2 class="heading-skills">Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-card">
+                <figure class="img-card">
+                    <img src="./assets/skills/html-5.png" class="skill-img" alt="">
+                </figure>
+                <div class="skill-level">90%</div>
+                <h1 class="skill-name">HTML</h1>
+            </div>
+            <div class="skill-card">
+                <figure class="img-card">
+                    <img src="./assets/skills/css3.png" class="skill-img" alt="">
+                </figure>
+                <div class="skill-level">80%</div>
+                <h1 class="skill-name">CSS</h1>
+            </div>
+            <div class="skill-card">
+                <figure class="img-card javascript-card">
+                    <img src="./assets/skills/javascript.png" class="skill-img" alt="">
+                </figure>
+                <div class="skill-level">80%</div>
+                <h1 class="skill-name">JavaScript</h1>
+            </div>
+            <div class="skill-card">
+                <figure class="img-card">
+                    <img src="./assets/skills/nodejs.svg" class="skill-img" alt="">
+                </figure>
+                <div class="skill-level">70%</div>
+                <h1 class="skill-name">Node.js</h1>
+            </div>
+            <div class="skill-card">
+                <figure class="img-card">
+                    <img src="./assets/skills/database.png" class="skill-img" alt="">
+                </figure>
+                <div class="skill-level">60%</div>
+                <h1 class="skill-name">DataBases</h1>
+            </div>
+            <div class="skill-card">
+                <figure class="img-card">
+                    <img src="./assets/skills/database-SQL-80.png" class="skill-img" alt="">
+                </figure>
+                <div class="skill-level">90%</div>
+                <h1 class="skill-name">SQL</h1>
+            </div>
+            <div class="skill-card">
+                <figure class="img-card git-card">
+                    <img src="./assets/skills/git.png" class="skill-img" alt="">
+                </figure>
+                <div class="skill-level">90%</div>
+                <h1 class="skill-name">Git</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <section class="projects-section" id="projects">
+        <div class="heading-project">
+            <h3>Projects</h3>
+            <h2>My Works</h2>
+            <p>I'm creative desginer based lorep ipsum dolor tachdown everybare yeah lets go <br>
+                and dedicated to my work.</p>
+        </div>
+
+        <div class="project-content">
+            <div class="project-card">
+                <figure class="img-project_box">
+                    <img src="./assets/projects/BingoGame.png" alt="It is the photo of the project">
+                </figure>
+                <div class="layer">
+                    <h3>Bingo Game</h3>
+                    <h5>HTML, CSS, JS</h5>
+                    <div>
+                        <button class="project-btn live" onclick="location.href='https://toniblopez.github.io/bingo-game/'">
+                            See Live
+                        </button>
+                        <button class="project-btn github" onclick="location.href='https://github.com/ToniBLopez/bingo-game'">
+                            Github Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <figure class="img-project_box">
+                    <img src="./assets/projects/GeometricFigure.jpg" alt="It is the photo of the project">
+                </figure>
+                <div class="layer">
+                    <h3>Geometric Figures</h3>
+                    <h5>HTML, CSS, JS</h5>
+                    <div>
+                        <button class="project-btn live" onclick="location.href='https://toniblopez.github.io/Geometric-Figure/'">
+                            See Live
+                        </button>
+                        <button class="project-btn github" onclick="location.href='https://github.com/ToniBLopez/Geometric-Figure'">
+                            Github Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <figure class="img-project_box">
+                    <img src="./assets/projects/BingoGame.png" alt="It is the photo of the project">
+                </figure>
+                <div class="layer online-store">
+                    <h3>Online Store</h3>
+                    <h5>HTML, CSS, JS,<br>Expres.js...</h5>
+                    <div>
+                        <button class="project-btn live" onclick="location.href='https://toniblopez.github.io/bingo-game/'">
+                            See Live
+                        </button>
+                        <button class="project-btn github" onclick="location.href='https://github.com/ToniBLopez/bingo-game'">
+                            Github Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <figure class="img-project_box">
+                    <img src="./assets/projects/BingoGame.png" alt="It is the photo of the project">
+                </figure>
+                <div class="layer">
+                    <h3>Databases</h3>
+                    <h5>RDBMS</h5>
+                    <div>
+                        <button class="project-btn live" onclick="location.href='https://toniblopez.github.io/bingo-game/'">
+                            See Live
+                        </button>
+                        <button class="project-btn github" onclick="location.href='https://github.com/ToniBLopez/bingo-game'">
+                            Github Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+        
     </section>
 
 </body>

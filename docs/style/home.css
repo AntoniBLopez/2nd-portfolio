@@ -1,11 +1,9 @@
-section {
-    padding: 100px 18%;
-}
-.home {
+.home-section {
     display: grid;
     min-height: 100vh;
     height: 100%;
     width: 100%;
+    padding: 100px 18%;
     background: url(../assets/background/background.jpg);
     background-size: cover;
     background-position: center;
@@ -24,7 +22,7 @@ section {
     font-size: 19px;
     font-weight: var(--font-weight);
 }
-span {
+.span-home {
     color: var(--main-color);
 }
 .home-text h3 {
@@ -57,7 +55,7 @@ span {
     background: var(--main-color);
     transition: 0.5s;
 }
-.btn {
+.btn-see_projects {
     display: inline-block;
     color: var(--bg-color);
     background: var(--main-color);
@@ -68,7 +66,7 @@ span {
     border-radius: 30px;
     transition: ease .40s;
 }
-.btn:hover {
+.btn-see_projects:hover {
     transform: scale(1.1);
 }
 .home-img {
@@ -76,6 +74,13 @@ span {
     height: 600px;
     margin-top: 50px;
 }
+/* .home-img {
+    position: absolute;
+    max-width: 100%;
+    left: 400px;
+    top: 100px;
+    margin-top: 100px;
+} */
 .home-img img {
     width: 100%;
     height: 100%;

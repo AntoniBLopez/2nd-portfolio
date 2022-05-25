@@ -44,3 +44,9 @@ section {
     transition: .3s;
     }
 }
+@media (max-width: 540px) {
+    :root {
+        --big-font: 2.8rem;
+        --h2-font: 1.4rem;
+    }
+}

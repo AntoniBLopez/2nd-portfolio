@@ -33,6 +33,8 @@
 }
 
 .skill-card{
+    display: grid;
+    justify-content: center;
     height: 150px;
     width: 130px;
     text-align: center;
@@ -55,6 +57,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.sql-img {
+    padding: 6px;
 }
 
 .skill-name{
@@ -125,5 +130,10 @@
 @media (max-width: 1425px) {
     .skills-section {
         padding: 0 3%;
+    }
+}
+@media (max-width: 540px) {
+    .heading-skills {
+        margin-bottom: 20px;
     }
 }

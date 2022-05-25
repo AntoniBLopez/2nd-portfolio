@@ -6,7 +6,7 @@
 
     width: 64%;
 
-    margin: 100px auto;
+    margin: 150px auto 100px auto;
     padding: 70px 150px;
     border-radius: 12px;
 
@@ -29,6 +29,9 @@
     line-height: 26px;
     margin-bottom: 25px;
 }
+.contact-action form {
+    width: 100%;
+}
 .contact-action form input[type="email"] {
     max-width: 100%;
     width: 470px;
@@ -40,13 +43,17 @@
     border-radius: 30px;
 }
 .contact-action form input[type="submit"] {
+    font-weight: var(--font-weight);
     padding: 12px 40px;
-    background-color: var(--main-color);
     color: var(--bg-color);
+    background-color: var(--main-color);
     border: none;
-    margin: 0px 10px 20px 0px;
     border-radius: 30px;
+    margin: 0px 10px 20px 0px;
     cursor: pointer;
+}
+.contact-action form input[type="submit"]:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 1425px) {
@@ -55,8 +62,21 @@
         transition: .3s;
     }
 }
+@media (max-width: 960px) {
+    .contact-action form input[type="email"] {
+        margin: 0px 0px 20px 0px;
+    }
+    .contact-action form input[type="submit"] {
+        margin: 0px 0px 20px 0px;
+    }
+}
 @media (max-width: 540px) {
     .contact-action form input[type="email"] {
         width: 310px;
+    }
+}
+@media (max-width: 350px) {
+    .contact-action form input[type="email"] {
+        width: 250px;
     }
 }

@@ -110,11 +110,33 @@ header.sticky {
     .navlist a:hover {
         background-color: var(--bg-color);
         color: var(--main-color);
+
     }
     .navlist::after {
         display: none;
     }
     .navlist.active {
         top: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        width: 100%;
+    }
+}
+@media (max-width: 540px) {
+    .top-btn {
+        font-size: 12px;
+        padding: 6px 20px;
+        transition: all .4s ease;
+    }
+}
+@media (max-width: 350px) {
+    .top-btn {
+        font-size: 10px;
+        font-weight: 900;
+        padding: 4px 15px;
+        transition: all .4s ease;
     }
 }

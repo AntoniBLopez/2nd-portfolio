@@ -70,22 +70,23 @@
 .btn-see_projects:hover {
     transform: scale(1.1);
 }
-.home-img {
+/* .home-img {
     width: 400px;
     height: 600px;
     margin-top: 50px;
-}
-/* .home-img {
-    position: absolute;
-    max-width: 100%;
-    left: 400px;
-    top: 100px;
-    margin-top: 100px;
 } */
-.home-img img {
-    width: 100%;
+.home-img {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
     height: 100%;
-    object-fit: cover;
+}
+.home-img img {
+    /* width: 100%;
+    height: auto; */
+    /* object-fit: cover; */
+    width: auto;
+    height: 600px;
 }
 
 @media (max-width: 1425px) {
@@ -93,22 +94,46 @@
         padding: 70px 3%;
         transition: .3s;
     }
+    /* .home-img {
+        
+    } */
+    /* .home-img img {
+        height: 500px;
+        margin-top: 50px;
+    } */
 }
 @media (max-width: 970px) {
     .home-section {
         min-width: 80vh;
     }
+    .home-img img {
+        height: 500px;
+        margin-top: 50px;
+    }
 }
 @media (max-width: 800px) {
     .home-section {
-        grid-template-columns: 1fr;
-        min-height: 130vh;
-        grid-gap: 1rem;
+        display: contents;
     }
     .home-text {
-        padding-top: 55px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 100vw; */
+        /* padding-top: 150px; */
+        padding: 150px 3% 0px 3%;
+    }
+    .home-text h1 {
+        text-align: center;
+    }
+    .home-text h5 {
+        text-align: center;
+    }
+    .home-text p {
+        text-align: center;
     }
     .home-img {
+        display: block;
         text-align: center;
         justify-self: center;
     }
@@ -117,5 +142,31 @@
         height: auto;
         text-align: center;
         justify-self: center;
+        transition: all .4s ease;
+    }
+}
+@media (max-width: 540px) {
+    .home-img img {
+        height: 350px;
+        width: auto;
+        margin: 50px;
+        transition: all .4s ease;
+    }
+    .home-text h5 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 440px) {
+    .home-img img {
+        height: 300px;
+        width: auto;
+        transition: all .4s ease;
+    }
+}
+@media (max-width: 350px) {
+    .home-img img {
+        height: 250px;
+        width: auto;
+        transition: all .4s ease;
     }
 }

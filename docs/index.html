@@ -37,7 +37,7 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="assets/cv/Toni-B-Lopez-CV_English.pdf" class="top-btn" download="CV_Toni_BLopez_English.pdf">Download CV</a>
+        <a href="assets/cv/Toni-B-Lopez-CV_English.pdf" class="top-btn" download="CV_ToniBLopez_English.pdf">Download CV</a>
     </header>
 
     <!-- Home -->
@@ -46,8 +46,7 @@
             <h3>Hello, I'm</h3>
             <h1>Toni B.Lopez</h1>
             <h5>A web software developer <span class="span-home">from Barcelona, Spain</span></h5>
-            <p>I'm creative desginer based lorep ipsum dolor tachdown everybare yeah lets go <br>
-            and dedicated to my work.</p>
+            <p>I like mathematics, algorithms, databases and the backend part of the projects.</p>
 
             <div class="social">
                 <a href="https://www.linkedin.com/in/toniblopez/"><i class='bx bxl-linkedin' ></i></a>
@@ -129,18 +128,53 @@
         <div class="heading-project">
             <h3>Projects</h3>
             <h2>My Works</h2>
-            <!-- <p>I'm creative desginer based lorep ipsum dolor tachdown everybare yeah lets go <br>
-                and dedicated to my work.</p> -->
         </div>
 
         <div class="project-content">
+
+            <div class="project-card">
+                <figure class="img-project_box">
+                    <img src="./assets/projects/meanwhile.jpg" alt="It is the photo of the project">
+                </figure>
+                <div class="layer onlineStoreProject">
+                    <h3>Online Store</h3>
+                    <h5>HTML, CSS, JS,<br>Expres.js...</h5>
+                    <div>
+                        <button class="project-btn live" onclick="location.href='https://toniblopez.github.io/'">
+                            See Live
+                        </button>
+                        <button class="project-btn github" onclick="location.href='https://toniblopez.github.io/'">
+                            Github Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <figure class="img-project_box">
+                    <img src="./assets/projects/meanwhile.jpg" alt="It is the photo of the project">
+                </figure>
+                <div class="layer">
+                    <h3>Databases</h3>
+                    <h5>RDBMS</h5>
+                    <div>
+                        <button class="project-btn live" onclick="location.href='https://toniblopez.github.io/'">
+                            See Live
+                        </button>
+                        <button class="project-btn github" onclick="location.href='https://toniblopez.github.io/">
+                            Github Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <div class="project-card">
                 <figure class="img-project_box">
                     <img src="./assets/projects/BingoGame.png" alt="It is the photo of the project">
                 </figure>
-                <div class="layer">
+                <div class="layer bingo-project">
                     <h3>Bingo Game</h3>
-                    <h5>HTML, CSS, JS</h5>
+                    <h5>(only for dekstop)<br>HTML, CSS, JS</h5>
                     <div>
                         <button class="project-btn live" onclick="location.href='https://toniblopez.github.io/bingo-game/'">
                             See Live
@@ -156,50 +190,14 @@
                 <figure class="img-project_box">
                     <img src="./assets/projects/GeometricFigure.jpg" alt="It is the photo of the project">
                 </figure>
-                <div class="layer">
+                <div class="layer geometric-figure_project">
                     <h3>Geometric Figures</h3>
-                    <h5>HTML, CSS, JS</h5>
+                    <h5>(only for deskstop)<br>HTML, CSS, JS</h5>
                     <div>
                         <button class="project-btn live" onclick="location.href='https://toniblopez.github.io/Geometric-Figure/'">
                             See Live
                         </button>
                         <button class="project-btn github" onclick="location.href='https://github.com/ToniBLopez/Geometric-Figure'">
-                            Github Repo
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <figure class="img-project_box">
-                    <img src="./assets/projects/BingoGame.png" alt="It is the photo of the project">
-                </figure>
-                <div class="layer online-store">
-                    <h3>Online Store</h3>
-                    <h5>HTML, CSS, JS,<br>Expres.js...</h5>
-                    <div>
-                        <button class="project-btn live" onclick="location.href='https://toniblopez.github.io/bingo-game/'">
-                            See Live
-                        </button>
-                        <button class="project-btn github" onclick="location.href='https://github.com/ToniBLopez/bingo-game'">
-                            Github Repo
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <figure class="img-project_box">
-                    <img src="./assets/projects/BingoGame.png" alt="It is the photo of the project">
-                </figure>
-                <div class="layer">
-                    <h3>Databases</h3>
-                    <h5>RDBMS</h5>
-                    <div>
-                        <button class="project-btn live" onclick="location.href='https://toniblopez.github.io/bingo-game/'">
-                            See Live
-                        </button>
-                        <button class="project-btn github" onclick="location.href='https://github.com/ToniBLopez/bingo-game'">
                             Github Repo
                         </button>
                     </div>
@@ -213,12 +211,14 @@
         <div class="contact-container">
             <div class="contact-container_text">
                 <h3>Contact me</h3>
-                <p>¿Don't like forms? Send me an email.</p>
+                <p>¿Don't like forms? Send me an email at<br>tonideveloper@outlook.es</p>
             </div>
 
             <div class="contact-action">
-                <form action="">
-                    <input type="email" name="email" placeholder="Enter Your email" required>
+                <form action="https://formsubmit.co/581dd5a7d9e98822e37f8c8b628828b0" method="POST">
+                    <input type="text" class="name" maxlength="50" name="name" placeholder="Enter your name" required>
+                    <input type="email" class="email" maxlength="40" name="email" placeholder="Your email" required>
+                    <textarea name="msg" id="msg" maxlength="1000" placeholder="Your message" required></textarea>
                     <input type="submit" name="submit" value="Submit" required>
                 </form>
             </div>

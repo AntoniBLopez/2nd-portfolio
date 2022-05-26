@@ -17,6 +17,7 @@ window.onscroll = () => {
     navlist.classList.remove('active')
 }
 
+// Transition efect
 const sr = ScrollReveal ({
     distance: '45px',
     duration: 2700,
@@ -25,7 +26,6 @@ const sr = ScrollReveal ({
 
 sr.reveal('.home-text', {delay:350, origin:'left'})
 sr.reveal('.home-img', {delay:350, origin:'right'})
-// sr.reveal('.skills-section.projects-section.contact-section', {delay:200, origin:'bottom'})
 sr.reveal('.heading-skills', {delay:200, origin:'bottom'})
 sr.reveal('.skills-container', {delay:200, origin:'bottom'})
 sr.reveal('.heading-project', {delay:200, origin:'bottom'})

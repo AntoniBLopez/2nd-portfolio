@@ -95,6 +95,20 @@
     bottom: 50%;
     opacity: 1;
 }
+.databases-project_container {
+    display: flex;
+    justify-content: center;
+}
+.databases-photoOne {
+    margin-right: 5px;
+}
+.databases-photoTwo {
+    margin-right: 5px;
+}
+.databases-project:hover h5 {
+    bottom: 45%;
+    opacity: 1;
+}
 .bingo-project:hover h5 {
     bottom: 45%;
     opacity: 1;
@@ -154,6 +168,10 @@
         bottom: 50%;
         opacity: 1;
     }
+    .databases-project h5 {
+        bottom: 45%;
+        opacity: 1;
+    }
     .bingo-project h5 {
         bottom: 45%;
         opacity: 1;
@@ -190,9 +208,37 @@
     .projects-section {
         margin: 100px 0px 400px 0px;
     }
+    .project-btn {
+        font-size: 15px;
+        transition: all .40s;
+    }
+    .databases-photoOne {
+        font-size: 15px;
+        transition: all .40s;
+    }
+    .databases-photoTwo {
+        font-size: 15px;
+        transition: all .40s;
+    }
+    .databases-photoThree {
+        font-size: 15px;
+        transition: all .40s;
+    }
 }
 @media (max-width: 336px) {
     .projects-section {
         margin: 650px 0px 350px 0px;
+    }
+    .databases-photoOne {
+        font-size: 13px;
+        transition: all .40s;
+    }
+    .databases-photoTwo {
+        font-size: 13px;
+        transition: all .40s;
+    }
+    .databases-photoThree {
+        font-size: 13px;
+        transition: all .40s;
     }
 }

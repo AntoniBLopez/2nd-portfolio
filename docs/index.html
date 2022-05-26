@@ -41,7 +41,8 @@
     </header>
 
     <!-- Home -->
-    <section class="home-section" id="home">
+    <div id="home"></div>
+    <section class="home-section">
         <div class="home-text">
             <h3>Hello, I'm</h3>
             <h1>Toni B.Lopez</h1>
@@ -152,25 +153,35 @@
 
             <div class="project-card">
                 <figure class="img-project_box">
-                    <img src="./assets/projects/meanwhile.jpg" alt="It is the photo of the project">
+                    <img src="./assets/projects/database/RocketMER.png" alt="It is the photo of the project">
                 </figure>
-                <div class="layer">
+                <div class="layer databases-project">
                     <h3>Databases</h3>
-                    <h5>RDBMS</h5>
-                    <div>
-                        <button class="project-btn live" onclick="location.href='https://toniblopez.github.io/'">
-                            See Live
-                        </button>
-                        <button class="project-btn github" onclick="location.href='https://toniblopez.github.io/">
-                            Github Repo
-                        </button>
+                    <h5>(only photos, no code)<br>RDBMS</h5>
+                    <div class="databases-project_container">
+                        <form action="./assets/projects/database/RocketMER.png" method="get">
+                            <button class="project-btn databases-photoOne">
+                                See photo one
+                            </button>
+                        </form>
+                        <form action="./assets/projects/database/RocketRDBMS.png" method="get">
+                            <button class="project-btn databases-photoTwo">
+                                Photo two
+                            </button>
+                        </form>
+                        <br>
+                        <form action="./assets/projects/database/RocketSchema-MySQL.png" method="get">
+                            <button class="project-btn databases-photoThree">
+                                Three
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
 
             <div class="project-card">
                 <figure class="img-project_box">
-                    <img src="./assets/projects/BingoGame.png" alt="It is the photo of the project">
+                    <img src="./assets/projects/bingo/BingoGame.png" alt="It is the photo of the project">
                 </figure>
                 <div class="layer bingo-project">
                     <h3>Bingo Game</h3>
@@ -188,7 +199,7 @@
 
             <div class="project-card">
                 <figure class="img-project_box">
-                    <img src="./assets/projects/GeometricFigure.jpg" alt="It is the photo of the project">
+                    <img src="./assets/projects/geometricFigure/GeometricFigure.jpg" alt="It is the photo of the project">
                 </figure>
                 <div class="layer geometric-figure_project">
                     <h3>Geometric Figures</h3>

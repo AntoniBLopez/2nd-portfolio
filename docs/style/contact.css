@@ -90,6 +90,11 @@
     .contact-action textarea {
         width: 310px;
     }
+    .contact-action form input[type="submit"] {
+        display: flex;
+        justify-content: center;
+        width: 100px;
+    }
 }
 @media (max-width: 350px) {
     .contact-action .name {

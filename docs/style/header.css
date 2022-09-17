@@ -11,9 +11,6 @@ header {
     padding: 30px 18%;
     transition: 0.3s;
 }
-.logo {
-    cursor: context-menu;
-}
 .logo img {
     max-width: 100%;
     width: 130px;

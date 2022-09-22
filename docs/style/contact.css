@@ -80,7 +80,17 @@
         transition: .3s;
     }
 }
+
+@media (max-width: 800px) {
+    .contact-section {
+        margin-top: 0px;
+        margin-bottom: 200px;
+    }
+}
 @media (max-width: 540px) {
+    .contact-section {
+        margin-bottom: 100px;
+    }
     .contact-action .name {
         width: 310px;
     }

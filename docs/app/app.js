@@ -1,3 +1,5 @@
+import mainPart from './logic/mainPart.js'
+
 const header = document.querySelector('header')
 const projectsInfoForMobile = document.getElementById('projectsInfoForMobile')
 
@@ -29,12 +31,14 @@ sr.reveal('.skills-container', {delay:200, origin:'bottom'})
 sr.reveal('.heading-project', {delay:200, origin:'bottom'})
 sr.reveal('.project-content', {delay:200, origin:'bottom'})
 sr.reveal('.contact-section', {delay:200, origin:'bottom'})
+
+// Esta lógica de a continuación que es info. para una buena experiencia de usuario con interacción, ponerlo en otro archivo y añadirlo aquí modularizado
 sr.reveal('#projectsInfoForMobile', {delay:3000, duration: 3000, origin: 'top', distance: '100px', beforeReveal: checkIfIsMobileDevice, afterReveal: hideEffect})
 
 const pageWidth  = document.documentElement.scrollWidth;
 function checkIfIsMobileDevice (el) {
 
-    if (pageWidth > 1100) {
+    if (pageWidth > 950) {
         projectsInfoForMobile.style.display = 'none'
     }
 }
@@ -56,3 +60,5 @@ function hideEffect (el) {
 
 // escuchador de width
 // window.addEventListener ('scroll', () => console.log(document.documentElement.scrollWidth))
+
+mainPart()

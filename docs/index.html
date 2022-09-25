@@ -138,47 +138,47 @@
 
         <div class="project-content">
 
-            <div class="project-card">
+            <div class="project-card" id="onlineStoreCard">
                 <figure class="img-project_box">
-                    <img src="./assets/projects/onlineStoreProject/OnlineStoreProject-Adapted.png" alt="It is the photo of the project">
+                    <img src="./assets/projects/onlineStoreProject/onlineStoreProject-Adapted.png" alt="It is the photo of the project">
                 </figure>
                 <div id="projectsInfoForMobile">
                     <h4>Press on the project</h4>
                     <h4>for more details</h4>
                     <img src="https://img.icons8.com/metro/26/000000/nui2.png"/>
                 </div>
-                <div class="layer onlineStoreProject">
-                    <h3>Online Store</h3>
-                    <h5>HTML, CSS, JS<br>React, Express.js, PostgreSQL...</h5>
+                <div class="layer onlineStoreDetailsStyle" id="onlineStoreDetails">
+                    <h3 id="onlineStoreDetails-h3">Online Store</h3>
+                    <h5 id="onlineStoreDetails-h5">HTML, CSS, JS<br>React, Express.js, PostgreSQL...</h5>
                     <div>
-                        <button class="project-btn github" onclick="location.href='https://github.com/ToniBLopez/Online-Store-Project-Full-Stack'">
+                        <button class="project-btn github" id="onlineStoreDetailsGitHubBtn" onclick="location.href='https://github.com/ToniBLopez/Online-Store-Project-Full-Stack'">
                             Github Repo & Install
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" id="databasesCard">
                 <figure class="img-project_box">
                     <img src="./assets/projects/database/RocketMER.png" alt="It is the photo of the project">
                 </figure>
-                <div class="layer databases-project">
-                    <h3>Databases</h3>
-                    <h5>RDBMS</h5>
-                    <div class="databases-project_container">
+                <div class="layer databasesDetailsSyle" id="databasesDetails">
+                    <h3 id="databasesDetails-h3">Databases</h3>
+                    <h5 id="databasesDetails-h5">RDBMS</h5>
+                    <div class="databasesDetails_container">
                         <form action="./assets/projects/database/RocketMER.png" method="get">
-                            <button class="project-btn databases-photoOne">
+                            <button class="project-btn databases-photoOne" id="databasesDetailsPhoto1Btn">
                                 See photo one
                             </button>
                         </form>
                         <form action="./assets/projects/database/RocketRDBMS.png" method="get">
-                            <button class="project-btn databases-photoTwo">
+                            <button class="project-btn databases-photoTwo" id="databasesDetailsPhoto2Btn">
                                 Photo two
                             </button>
                         </form>
                         <br>
                         <form action="./assets/projects/database/RocketSchema-MySQL.png" method="get">
-                            <button class="project-btn databases-photoThree">
+                            <button class="project-btn databases-photoThree" id="databasesDetailsPhoto3Btn">
                                 Three
                             </button>
                         </form>
@@ -186,18 +186,18 @@
                 </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" id="bingoGameCard">
                 <figure class="img-project_box">
                     <img src="./assets/projects/bingo/BingoGame.png" alt="It is the photo of the project">
                 </figure>
-                <div class="layer bingo-project">
-                    <h3>Bingo Game</h3>
-                    <h5>(only for dekstop)<br>HTML, CSS, JS</h5>
+                <div class="layer bingoGameDetailsStyle" id="bingoGameDetails">
+                    <h3 id="bingoGameDetails-h3">Bingo Game</h3>
+                    <h5 id="bingoGameDetails-h5">(only for dekstop)<br>HTML, CSS, JS</h5>
                     <div>
-                        <button class="project-btn live" onclick="location.href='https://toniblopez.github.io/bingo-game/'">
+                        <button class="project-btn live" id="bingoGameDetailsLiveBtn" onclick="location.href='https://toniblopez.github.io/bingo-game/'">
                             See Live
                         </button>
-                        <button class="project-btn github" onclick="location.href='https://github.com/ToniBLopez/bingo-game'">
+                        <button class="project-btn github" id="bingoGameDetailsGitHubBtn" onclick="location.href='https://github.com/ToniBLopez/bingo-game'">
                             Github Repo
                         </button>
                     </div>
@@ -232,6 +232,6 @@
         <p>Made with love by Toni B.Lopez, inspired by Tahmid Ahmed © 2022</p>
     </div>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./app/app.js"></script>
+    <script type="module" src="./app/app.js"></script>
 </body>
 </html>

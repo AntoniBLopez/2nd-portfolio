@@ -103,7 +103,7 @@
     .contact-action form input[type="submit"] {
         display: flex;
         justify-content: center;
-        width: 100px;
+        /* width: 10px; */
     }
 }
 @media (max-width: 350px) {

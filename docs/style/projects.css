@@ -104,10 +104,10 @@
     transition: all .40s;
 }
 .layer:hover h5 {
-    bottom: 50%;
+    bottom: 45%;
     opacity: 1;
 }
-.databases-project_container {
+.databasesDetails_container {
     display: flex;
     justify-content: center;
 }
@@ -116,22 +116,6 @@
 }
 .databases-photoTwo {
     margin-right: 5px;
-}
-.databases-project:hover h5 {
-    bottom: 45%;
-    opacity: 1;
-}
-.bingo-project:hover h5 {
-    bottom: 45%;
-    opacity: 1;
-}
-.geometric-figure_project:hover h5 {
-    bottom: 45%;
-    opacity: 1;
-}
-.onlineStoreProject:hover h5 {
-    bottom: 45%;
-    opacity: 1;
 }
 .layer div {
     position: absolute;

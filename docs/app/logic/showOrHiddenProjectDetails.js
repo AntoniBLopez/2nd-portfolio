@@ -197,15 +197,6 @@ function showOrHiddenProjectDetails() {
 
     document.addEventListener('click', () => {
 
-        // let card = ''
-        // if (clickOnTheZeroCard === true) {
-        //     card = 'ZeroCard'
-        // } else if (clickOnTheOneCard === true) {
-        //     card = 'OneCard'
-        // } else if (clickOnTheTwoCard === true) {
-        //     card = ''
-        // }
-
         if(clickOnTheZeroCard === true) {
             clickOnTheZeroCard = false
 

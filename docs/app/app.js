@@ -33,7 +33,7 @@ sr.reveal('.project-content', {delay:200, origin:'bottom'})
 sr.reveal('.contact-section', {delay:200, origin:'bottom'})
 
 // Esta lógica de a continuación que es info. para una buena experiencia de usuario con interacción, ponerlo en otro archivo y añadirlo aquí modularizado
-sr.reveal('#projectsInfoForMobile', {delay:3000, duration: 3000, origin: 'top', distance: '100px', beforeReveal: checkIfIsMobileDevice, afterReveal: hideEffect})
+sr.reveal('#projectsInfoForMobile', {delay:1000, duration: 2000, origin: 'top', distance: '100px', beforeReveal: checkIfIsMobileDevice, afterReveal: hideEffect})
 
 const pageWidth  = document.documentElement.scrollWidth;
 function checkIfIsMobileDevice (el) {
@@ -50,12 +50,12 @@ function hideEffect (el) {
         projectsInfoForMobile.style.opacity = '0.1'
         projectsInfoForMobile.style.visibility = 'hidden'
         projectsInfoForMobile.style.transition = 'all 2s'
-    }, 2000);
+    }, 1500);
 
     setTimeout(() => {
 
         projectsInfoForMobile.style.display = 'none'
-    }, 4000);
+    }, 2550);
 }
 
 // escuchador de width

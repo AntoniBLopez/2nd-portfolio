@@ -117,6 +117,11 @@
     .contact-action form input[type="submit"] {
         display: flex;
         justify-content: center;
+
+
+        padding: 12px 50px;
+
+        font-size: large;
     }
 }
 @media (max-width: 350px) {

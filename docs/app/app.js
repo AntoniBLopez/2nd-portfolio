@@ -14,6 +14,8 @@ window.addEventListener ('scroll', () => {
         if (header.classList.value === 'sticky') {
             sticky = document.querySelector('.sticky')
             sticky.style.boxShadow = '0px 0px 10px rgb(0 0 0 / 10%)'
+        } else if (header.classList.value === '') {
+            header.style.boxShadow = 'none'
         }
     }
 })

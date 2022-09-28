@@ -118,10 +118,8 @@
         display: flex;
         justify-content: center;
 
-
-        padding: 17px 55px;
-
-        /* font-size: medium; */
+        /* padding: 15px 50px; */
+        font-size: medium;
     }
 }
 @media (max-width: 350px) {

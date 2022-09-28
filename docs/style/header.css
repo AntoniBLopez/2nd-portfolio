@@ -113,13 +113,19 @@ header.sticky {
 
         color: var(--text-color);
         background-color: var(--bg-color);
+        text-decoration: none;
     }
     .navlist a:hover {
-        color: var(--main-color);
-        background-color: var(--bg-color);
+        color: var(--bg-color);
+        background-color: var(--main-color);
+        transform: scale(1.1);
+        transition: ease .50s;
     }
-    .navlist::after {
+    /* .navlist::after {
         display: none;
+    } */
+    .navlist a:hover::after {
+        width: 0;
     }
     .navlist.active {
         top: 95%;

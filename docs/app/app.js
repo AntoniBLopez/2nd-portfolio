@@ -2,6 +2,8 @@ import mainPart from './logic/mainPart.js'
 
 const header = document.querySelector('header')
 const projectsInfoForMobile = document.getElementById('projectsInfoForMobile')
+let sticky = document.querySelector('.sticky')
+const coverShadow = document.querySelector('.coverShadow')
 
 window.addEventListener ('scroll', () => {
     header.classList.toggle('sticky', window.scrollY > 0)
@@ -10,11 +12,13 @@ window.addEventListener ('scroll', () => {
         coverShadow.style.display = 'none'
 
         if (header.classList.value === 'sticky') {
+            sticky = document.querySelector('.sticky')
             sticky.style.boxShadow = '0px 0px 10px rgb(0 0 0 / 10%)'
         }
     }
 })
 window.addEventListener ('click', () => {
+    sticky = document.querySelector('.sticky')
 
     if (navlist.classList.value === 'navlist active') {
 
@@ -28,7 +32,7 @@ window.addEventListener ('click', () => {
 
             coverShadow.style.display = 'flex'
 
-        }, 500);
+        }, 600);
 
         if (header.classList.value === 'sticky') {
             sticky.style.boxShadow = 'none'
@@ -43,8 +47,6 @@ window.addEventListener ('click', () => {
 })
 
 const menu = document.querySelector('#menu-icon')
-const sticky = document.querySelector('.sticky')
-const coverShadow = document.querySelector('.coverShadow')
 const navlist = document.querySelector('.navlist')
 
 menu.onclick = () => {
@@ -100,8 +102,5 @@ function hideEffect (el) {
         projectsInfoForMobile.style.display = 'none'
     }, 2550);
 }
-
-// escuchador de width
-// window.addEventListener ('scroll', () => console.log(document.documentElement.scrollWidth))
 
 mainPart()

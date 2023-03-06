@@ -1,0 +1,9 @@
+.ends {
+  text-align: center;
+  margin: 50px 0px 30px 0px;
+}
+
+.ends p {
+  font-size: var(--p-font);
+  letter-spacing: 1px;
+}

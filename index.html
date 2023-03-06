@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="This is the professional portfolio of Toni B. Lopez">
+  <meta name="robots" content="index,follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio - Toni B.Lopez</title>
+
+  <link rel="stylesheet" href="./style/standard.css">
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/home.css">
+  <link rel="stylesheet" href="./style/skills.css">
+  <link rel="stylesheet" href="./style/projects.css">
+  <link rel="stylesheet" href="./style/contact.css">
+  <link rel="stylesheet" href="./style/ends.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;600;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <a href="#home" class="logo">
+      <img src="./assets/logo/LogoMakr-red-and-black.png" alt="It is the logo of the page">
+    </a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navlist">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="assets/cv/ToniBLopez_CV_Español.pdf" class="top-btn" download="CV_ToniBLopez_Spanish.pdf">Download CV</a>
+  </header>
+
+  <div class="coverShadow"></div>
+
+  <!-- Home -->
+  <div id="home"></div>
+  <section class="home-section">
+    <div class="home-text">
+      <h3>Hello, I'm</h3>
+      <h1>Toni B.Lopez</h1>
+      <h5>A web software developer <span class="span-home">from Barcelona, Spain</span></h5>
+      <p>I like astronomy, mathematics and the backend part of projects</p>
+      <div class="social">
+        <a href="https://github.com/ToniBLopez/"><i class='bx bxl-github'></i></a>
+        <a href="https://gitlab.com/ToniBLopez/"><i class='bx bxl-gitlab'></i></a>
+        <a href="https://www.linkedin.com/in/toniblopez/"><i class='bx bxl-linkedin'></i></a>
+        <!-- <a href="https://twitter.com/ToniBLopez"><i class='bx bxl-twitter' ></i></a> -->
+        <!-- <a href="https://www.instagram.com/toniiblopez/"><i class='bx bxl-instagram' ></i></a> -->
+      </div>
+      <a href="#projects" class="btn-see_projects">See Projects</a>
+    </div>
+    <figure class="home-img">
+      <img src="./assets/me/me_transparent.png" alt="It's my main photo">
+    </figure>
+  </section>
+
+  <!-- Skills -->
+  <div class="skills-section" id="skills">
+    <div class="heading-skills">
+      <h3>Skills</h3>
+      <h2>My Knowledge</h2>
+    </div>
+    <div class="skills-container">
+      <div class="skill-card" title="HTML">
+        <figure class="img-card">
+          <img src="./assets/skills/html-5.png" class="skill-img" alt="">
+        </figure>
+      </div>
+      <div class="skill-card" title="CSS">
+        <figure class="img-card">
+          <img src="./assets/skills/css3.png" class="skill-img" alt="">
+        </figure>
+      </div>
+      <div class="skill-card" title="JavaScript">
+        <figure class="img-card javascript-card">
+          <img src="./assets/skills/javascript.png" class="skill-img" alt="">
+        </figure>
+      </div>
+      <div class="skill-card" title="React">
+        <figure class="img-card react-card">
+          <img src="./assets/skills/react-144.png" class="skill-img" alt="">
+        </figure>
+      </div>
+      <div class="skill-card" title="Express">
+        <figure class="img-card express-card">
+          <img src="./assets/skills/express_js-144.png" class="skill-img" alt="">
+        </figure>
+      </div>
+      <div class="skill-card" title="Node.js">
+        <figure class="img-card">
+          <img src="./assets/skills/nodejs.svg" class="skill-img" alt="">
+        </figure>
+      </div>
+      <div class="skill-card" title="MongoDB">
+        <figure class="img-card">
+          <img src="./assets/skills/mongodb-96.png" class="skill-img" alt="">
+        </figure>
+      </div>
+      <div class="skill-card" title="Git">
+        <figure class="img-card git-card">
+          <img src="./assets/skills/git.png" class="skill-img" alt="">
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <section class="projects-section" id="projects">
+    <div class="heading-project">
+      <h3>Projects</h3>
+      <h2>My Works</h2>
+    </div>
+    <div class="project-content">
+      <div class="project-card">
+        <figure class="img-project_box">
+          <img src="./assets/projects/SocialMedia.png" alt="It is the photo of the project">
+        </figure>
+        <div id="projectsInfoForMobile">
+          <h4>Press on the project</h4>
+          <h4>for more details</h4>
+          <img src="https://img.icons8.com/metro/26/000000/nui2.png" />
+        </div>
+        <div class="layer onlineStoreDetailsStyle" id="onlineStoreDetails">
+          <h3 id="onlineStoreDetails-h3">Social Media</h3>
+          <h5 id="onlineStoreDetails-h5">MERN stack<br>MongoDB, Express, React, Node</h5>
+          <div class="button-contained">
+            <button class="project-btn github" id="onlineStoreDetailsGitHubBtn"
+              onclick="location.href='https://gitlab.com/ToniBLopez/social-media-web-app'">
+              GiLab
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="project-card" id="onlineStoreCard">
+          <figure class="img-project_box">
+            <img src="./assets/projects/onlineStoreProject/OnlineStoreProject-Adapted.png"
+              alt="It is the photo of the project">
+          </figure>
+          <div class="layer onlineStoreDetailsStyle" id="onlineStoreDetails">
+            <h3 id="onlineStoreDetails-h3">Online Store</h3>
+            <h5 id="onlineStoreDetails-h5">HTML, CSS, JS<br>React, Express.js, PostgreSQL...</h5>
+            <div class="button-contained">
+              <button class="project-btn github" id="onlineStoreDetailsGitHubBtn"
+                onclick="location.href='https://github.com/ToniBLopez/Online-Store-Project-Full-Stack'">
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" id="databasesCard">
+          <figure class="img-project_box">
+            <img src="./assets/projects/database/RocketMER.png" alt="It is the photo of the project">
+          </figure>
+          <div class="layer databasesDetailsSyle" id="databasesDetails">
+            <h3 id="databasesDetails-h3">Databases</h3>
+            <h5 id="databasesDetails-h5">RDBMS</h5>
+            <div class="databasesDetails_container">
+              <form action="./assets/projects/database/RocketMER.png" method="get">
+                <button class="databases-button" id="databasesDetailsPhoto1Btn">
+                  Photo one
+                </button>
+              </form>
+              <form action="./assets/projects/database/RocketRDBMS.png" method="get">
+                <button class="databases-button" id="databasesDetailsPhoto2Btn">
+                  Photo two
+                </button>
+              </form>
+              <br>
+              <form action="./assets/projects/database/RocketSchema-MySQL.png" method="get">
+                <button class="databases-button" id="databasesDetailsPhoto3Btn">
+                  Photo three
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" id="bingoGameCard">
+          <figure class="img-project_box">
+            <img src="./assets/projects/bingo/BingoGame.png" alt="It is the photo of the project">
+          </figure>
+          <div class="layer bingoGameDetailsStyle" id="bingoGameDetails">
+            <h3 id="bingoGameDetails-h3">Bingo Game</h3>
+            <h5 id="bingoGameDetails-h5">(only for dekstop)<br>HTML, CSS, JS</h5>
+            <div class="button-contained">
+              <button class="project-btn live" id="bingoGameDetailsLiveBtn"
+                onclick="location.href='https://toniblopez.github.io/bingo-game/'">
+                See Live
+              </button>
+              <button class="project-btn github" id="bingoGameDetailsGitHubBtn"
+                onclick="location.href='https://github.com/ToniBLopez/bingo-game'">
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <div id="contact"></div>
+
+  <!-- Contact -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-container_text">
+        <h3>Contact me</h3>
+        <p>¿Don't like forms? Send me an email</p>
+      </div>
+      <div class="contact-action">
+        <form action="https://formsubmit.co/toniblopezdeveloper@gmail.com" method="POST">
+          <input type="text" class="name" maxlength="50" name="name" placeholder="Enter your name" required>
+          <input type="email" class="email" maxlength="40" name="email" placeholder="Your email" required>
+          <textarea name="msg" id="msg" maxlength="1000" placeholder="Your message" required></textarea>
+          <input type="submit" name="submit" value="Submit" required>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ends -->
+  <div class="ends">
+    <p>Made with love by Toni B.Lopez</p>
+  </div>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="module" src="./app/app.js"></script>
+</body>
+
+</html>
